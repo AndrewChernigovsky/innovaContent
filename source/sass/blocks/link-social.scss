@@ -1,0 +1,26 @@
+.link-social {
+    &__text {
+
+    }
+
+    &__image {
+        width: 31px;
+        height: 31px;
+        background-color: $basicgray6;
+        border: 1px solid $basicgray7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            svg {
+                fill: $basicgreen;
+                transition: 0.2s ease-in-out;
+            }
+
+            border: 1px solid $basicgreen;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}

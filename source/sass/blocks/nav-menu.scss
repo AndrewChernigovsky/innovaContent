@@ -3,5 +3,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        list-style-type: none;
+
+    }
+
+    &__link {
+        color: $basicgray5;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+            color: $basicgreen;
+            transition: 0.2s ease-in-out;
+        }
+    }
+
+    &__toggle {
+
+        @media (max-width: $ds) {
+            display: block;
+        }
     }
 }
